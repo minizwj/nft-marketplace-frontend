@@ -3,7 +3,7 @@ import ABI from '../contracts/MyNFT.json';
 import axios from 'axios';
 
 let provider = new ethers.BrowserProvider(window.ethereum)
-const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const contractAddress = "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8";
 const contract = new ethers.Contract(contractAddress, ABI, await provider.getSigner());
 
 export async function balanceOf(address) {
