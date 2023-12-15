@@ -2,7 +2,7 @@ import { ethers } from 'ethers';
 import ABI from '../contracts/Market.json';
 
 let provider = new ethers.BrowserProvider(window.ethereum)
-const contractAddress = "0x9E545E3C0baAB3E08CdfD552C960A1050f373042";
+const contractAddress = "0xf8e81D47203A594245E36C48e151709F0C19fBe8";
 const contract = new ethers.Contract(contractAddress, ABI, await provider.getSigner());
 
 export async function buy(tokenId) {
