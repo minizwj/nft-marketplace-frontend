@@ -8,7 +8,7 @@ const Navbar = ({ onConnectWallet, address }) => {
       <Link to="/create-nft">Create NFT</Link>
       <div className="navbar-menu">
         <button className="connect-wallet-button" onClick={onConnectWallet}>
-          {address.slice(0, 6) || "Connect Wallet"}
+          {address.slice(0, 8) || "Connect Wallet"}
         </button>
       </div>
     </nav>
